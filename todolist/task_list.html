@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task.title }} {% if task.completed %}(Completed){% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
