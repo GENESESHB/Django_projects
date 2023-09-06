@@ -1,0 +1,116 @@
+header{
+    color:rebeccapurple;
+    background-color: rgb(255, 240, 246);
+    text-align: center;
+    border-width: 1px;
+
+}
+
+.filters h2,
+.filters h3,
+.filters h4 {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Header 3 style */
+.filters h3 {
+  font-size: 1.17em;
+  font-weight: 600;
+  height: 50%;
+  padding: 15.5px 0 0 30px;
+}
+
+/* Header 4 style */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+li {
+ transform: scale();
+ border: 2px solid #333;
+ border-radius: 20px;
+ width: 20%;
+ margin: 10px;
+ background-color: white;
+ padding: 20px;
+}
+h2 {
+    font-variant: small-caps;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-over-image {
+    position: relative;
+    width: 300px; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .text-over-image img {
+    width: 100%; /* Make the image width 100% of the container */
+    height: auto; /* Preserve the image's aspect ratio */
+    display: block; /* Remove any default spacing or alignment */
+  }
+  
+  .text-over-image p {
+    position: absolute;
+    top: 50%; /* Place the text vertically at 50% from the top of the container */
+    left: 50%; /* Place the text horizontally at 50% from the left of the container */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to make the text more readable */
+    padding: 10px; /* Add padding around the text for better visibility */
+    font-size: 18px; /* Adjust the text size as needed */
+    color: #333; /* Text color */
+  }
+
+  h1 {
+    border: 2px solid #333; /* Bordure solide de 2 pixels avec une couleur sombre */
+    border-radius: 20px; /* Coins arrondis pour le cadre */
+    padding: 10px; /* Espace à l'intérieur du cadre */
+    display: inline-block; /* Pour que le cadre s'adapte au contenu */
+    background-color: #f0f0f0; /* Couleur de fond */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Pour centrer horizontalement */
+    text-align: left;
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center;
+    width: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

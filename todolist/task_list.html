@@ -1,15 +1,236 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task List</title>
+    <meta charset="utf-8">
+    <title>exelent school</title>
+    <link rel="stylesheet" href="styledidiv.css">
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <ul>
-        {% for task in tasks %}
-        <li>{{ task.title }} {% if task.completed %}(Completed){% endif %}</li>
-        {% endfor %}
-    </ul>
+    <div>
+        <h1>
+        AirBnB_clone project alx 
+        </h1>
+        <p align="center">
+            <img src="https://manilainsight.com/wp-content/uploads/2023/07/pngwing.com_.png" alt="holberton">
+        </p>
+        <h1 >
+         0x00. AirBnB clone - The console
+        </h1>
+<p align="center">
+  <img src="https://github.com/HeimerR/AirBnB_clone/raw/master/images/pipeline.png" alt="HolbertonBnB logo">
+</p>
+<head>
+    <title>Class Information</title>
+    <style>
+        /* Add CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <h1>Classes 🆑</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Attributes</th>
+                <th>Methods</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Base Model -->
+            <tr>
+                <td>BaseModel</td>
+                <td>id<br>created_at<br>updated_at</td>
+                <td>save<br>to_dict</td>
+            </tr>
+
+            <!-- FileStorage -->
+            <tr>
+                <td>FileStorage</td>
+                <td>file_path</td>
+                <td></td>
+            </tr>
+
+            <!-- User -->
+            <tr>
+                <td>User</td>
+                <td>email<br>password<br>first_name<br>last_name</td>
+                <td></td>
+            </tr>
+
+            <!-- State -->
+            <tr>
+                <td>State</td>
+                <td>name</td>
+                <td></td>
+            </tr>
+
+            <!-- City -->
+            <tr>
+                <td>City</td>
+                <td>name<br>state_id</td>
+                <td></td>
+            </tr>
+
+            <!-- Amenity -->
+            <tr>
+                <td>Amenity</td>
+                <td>name</td>
+                <td></td>
+            </tr>
+
+            <!-- Place -->
+            <tr>
+                <td>Place</td>
+                <td>user_id<br>name<br>description<br>number_rooms<br>number_bathrooms<br>max_guest<br>price_by_night<br>latitude<br>longitude<br>amenity_ids</td>
+                <td></td>
+            </tr>
+
+            <!-- Review -->
+            <tr>
+                <td>Review</td>
+                <td>place_id<br>user_id<br>text</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
 
+<h1>
+    Resources
+</h1>
+<head>
+    <style>
+        .code-container {
+            background-image:url(g.webp);
+            background-size: cover; /* Dark background color */
+            padding: 20px; /* Padding around the code */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(222, 12, 12, 0.5); /* Shadow effect */
+        }
+
+        /* Custom styles for the code itself */
+        .language-python {
+            color: red; /* Text color */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<ul style="margin: auto;color: #8c7070;font-size: 20px; border: 2px solid blue; border-radius: 20px; background-image: url(v.jpeg);background-size: cover;">
+
+    <li><a href="https://docs.python.org/3.8/library/cmd.html" title="cmd module" target="_blank">cmd module</a> </li>
+
+    <li><a href="http://pymotw.com/2/cmd/" title="cmd module in depth" target="_blank">cmd module in depth</a></li>
+
+    <li><strong>packages</strong> concept page</li>
+
+    <li><a href="https://docs.python.org/3.8/library/uuid.html" title="uuid module" target="_blank">uuid module</a> </li>
+
+    <li><a href="https://docs.python.org/3.8/library/datetime.html" title="datetime" target="_blank">datetime</a> </li>
+
+    <li><a href="https://docs.python.org/3.8/library/unittest.html#module-unittest" title="unittest module" target="_blank">unittest module</a> </li>
+
+    <li><a href="https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/" title="args/kwargs" target="_blank">args/kwargs</a> </li>
+
+    <li><a href="https://www.pythonsheets.com/notes/python-tests.html" title="Python test cheatsheet" target="_blank">Python test cheatsheet</a> </li>
+
+    <li><a href="https://wiki.python.org/moin/CmdModule" title="cmd module wiki page" target="_blank">cmd module wiki page</a></li>
+
+    <li><a href="https://realpython.com/python-testing/" title="python unittest" target="_blank">python unittest</a></li>
+
+</ul>
+
+<h1>
+    Explining & code
+</h1>
+<h2>
+for BaseModel & Create BaseModel from dictionary
+  & Store first object
+``
+</h2>
+<h2>
+`` Break down the provided Python code step by step and explain each part:  ``
+</h2>
+<div class="code-container">
+    <!-- Wrap your code in <pre> and <code> elements with the appropriate language class -->
+    <pre><code class="language-python">
+```python
+#!/usr/bin/python3
+</code></pre>
+</div>
+<h2>
+```
+This line is known as a shebang line. It's used in Unix-like operating systems to indicate the interpreter for executing the script. In this case, the script is intended to be run using Python 3.
+</h2>
+<div class="code-container">
+    <!-- Wrap your code in <pre> and <code> elements with the appropriate language class -->
+    <pre><code class="language-python">
+```python
+"""defines the BaseModel class -parent-classe-"""
+```
+This is a docstring, which is a string used to document what the following code does. It states that this code defines the `BaseModel` class, which is a parent class.
+
+```python
+import uuid
+from datetime import datetime
+import models
+</code></pre>
+</div>
+<h2>
+```
+These lines are importing necessary modules for the script. The `uuid` module is used to generate universally unique identifiers, the `datetime` module is used for working with date and time information, and the `models` module is presumably part of the broader codebase.
+</h2>
+<div class="code-container">
+    <!-- Wrap your code in <pre> and <code> elements with the appropriate language class -->
+    <pre><code class="language-python">
+```python
+class BaseModel:
+    '''initialization of  the BaseModel -parent-class-'''
+    def __init__(self, *args, **kwargs):
+        frmdat = "%Y-%m-%dT%H:%M:%S.%f"
+        self.id = str(uuid.uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
+        </code></pre>
+</div>
+
+        <h2>
+This section defines the `BaseModel` class and its constructor (`__init__`). The constructor initializes instance
+ attributes like `id`, `created_at`, and `updated_at`. `uuid.uuid4()` generates a random UUID, and `datetime.now()` assigns the current date and time to both `created_at` 
+ and `updated_at` attributes.
+</h2>
+<div class="code-container">
+    <!-- Wrap your code in <pre> and <code> elements with the appropriate language class -->
+    <pre><code class="language-python">
+```python
+        if kwargs:
+            for key, value in kwargs.items():
+                if key == "created_at" or key == "updated_at":
+                    value = datetime.strptime(value, frmdat)
+                if key != "__class__":
+                    self.__dict__[key] = value
+        else:
+            models.storage.new(self)
+            </code></pre>
+</div>
+
+
+<div class="text-over-image">
+    <img src="OIP.jpeg" alt="Description of the image">
+    <p>sbat nadi</p>
+  </div>
+  
+<h3>
+    sbat
+</h3>
+ </div>
+    
+    <script>
+        // Replace the content of the div with the converted HTML
+        const markdownContent = document.getElementById('markdown-content');
+        const markdownText = markdownContent.textContent;
+        markdownContent.innerHTML = marked(markdownText);
+    </script>
+</body>
+</html>
