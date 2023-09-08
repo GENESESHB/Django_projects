@@ -1,0 +1,48 @@
+header {
+    background: #fff url('../images/logo.jpg') 20px center no-repeat;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+    width: 100%;
+  }
+  
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc; /* Bordure légèrement grise */
+    border-radius: 25px; /* Coins arrondis pour un aspect arrondi */
+    overflow: hidden; /* Cache le contenu qui dépasse la limite */
+    width: 70%; /* Largeur maximale de la zone de recherche */
+    padding: 12px; /* Espacement interne pour le conteneur */
+    background-color: #fff; /* Fond blanc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    height: 8mm;
+    position: absolute; /* Position absolue pour positionner en haut à droite */
+    top: 10px; /* Distance par rapport au haut de la page */
+    right: 10px; /* Distance par rapport à la droite de la page */
+
+
+}
+
+#search-bar {
+  flex: 1; /* Le champ de recherche prend toute la largeur disponible */
+  border: none; /* Pas de bordure autour du champ de recherche */
+  outline: none; /* Supprime la bordure de focus par défaut */
+  font-size: 16px; /* Taille de police */
+  border-radius: 0 25px 25px 0; /* Coins arrondis à droite */
+}
+
+#search-button {
+  width: 3cm;
+  background-color: #f46842; /* Couleur de fond bleue */
+  color: #fff; /* Texte en blanc */
+  border: 1px solid blanchedalmond; /* Pas de bordure autour du bouton */
+  border-radius: 25px;
+  padding: 12px 20px; /* Rembourrage à l'intérieur du bouton */
+  cursor: pointer; /* Curseur de main au survol du bouton */
+}
+#search-button:hover{
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    z-index: 2; 
+}
