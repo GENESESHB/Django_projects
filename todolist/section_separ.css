@@ -72,28 +72,84 @@
     cursor: pointer;
     
 }
+#profile{
+    background-image: url(images/profi.jpg);
+    background-size: cover;
+    border: 1px solid rgb(143, 143, 158);
+    border-radius: 30px;
+    width: 18mm;
+    height: 18mm;
+    background-color: rgb(226, 65, 65);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#ask_gpt{
+    background-image: url(images/ask_gpt.png);
+    background-size: cover;
+    border: 1px solid rgb(143, 143, 158);
+    border-radius: 30px;
+    width: 18mm;
+    height: 18mm;
+    background-color: rgb(226, 65, 65);
+    margin-bottom: 20px;
+    cursor: pointer; 
+}
+#ask_gpt:hover{
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    z-index: 2;
+    border: 2px solid rgb(28, 214, 112);
+}
+#profile:hover{
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    z-index: 2;
+    border: 2px solid rgb(27, 217, 113);
+}
 #planing:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
+    border: 2px solid rgb(29, 201, 106);
 } 
 #notes:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
+    border: 2px solid rgb(29, 215, 113);
 } 
 #projects:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
+    border: 2px solid rgb(29, 213, 112);
 } 
 #activites:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
+    border: 2px solid rgb(28, 207, 109);
 } 
 #raport:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
+    border: 2px solid rgb(25, 209, 108);
 } 
+#culters {
+    background-image: url(images/cul.png);
+    background-size: cover;
+    border: 1px solid rgb(143, 143, 158);
+    border-radius: 30px;
+    width: 18mm;
+    height: 18mm;
+    background-color: rgb(226, 65, 65);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#culters:hover{
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    z-index: 2;
+    border: 2px solid rgb(22, 196, 100);
+}

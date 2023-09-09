@@ -1,8 +1,13 @@
 header {
-    background: #fff url('../images/logo.jpg') 20px center no-repeat;
+    background: #fff url('../images/logoschool.png') 20px center no-repeat;
     border-bottom: 1px solid #ccc;
     height: 70px;
     width: 100%;
+  }
+  .logo img {
+    width: 15%;
+    height: 25mm;
+    bottom: 2px;
   }
   
 
@@ -43,6 +48,49 @@ header {
 }
 #search-button:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    background-color: rgb(33, 204, 107); /* Changez la couleur de fond en orange au survol */
     z-index: 2; 
+}
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Empilez les éléments verticalement */
+      text-align: center; /* Centrez le texte et le logo */
+      padding: auto;
+  }
+  .logo img {
+    width: 10%;
+    height: 8mm;
+    margin-right: 15cm;
+    margin-top: 10px;
+}
+
+  .search-container {
+      height: 6mm;
+      width: 70%; /* Utilisez toute la largeur de l'écran */
+      max-width: 400px; /* Limitez la largeur maximale pour une meilleure lisibilité */
+      margin-top: 8px; /* Ajoutez de l'espace entre le logo et la zone de recherche */
+  }
+
+  #search-bar {
+    font-size: 12px;  
+    border-radius: 25px; /* Rétablissez les coins arrondis */
+  }
+
+  #search-button {
+      content: center;
+      width: 20mm;
+      padding-bottom: 5mm;
+      height: 4mm;
+      border-radius: 25px; /* Rétablissez les coins arrondis */
+      margin-top: 4px; /* Ajoutez de l'espace entre le champ de recherche et le bouton */
+  }
+}
+
+/* Ajoutez une media query pour les écrans mobiles */
+@media (max-width: 480px) {
+  header {
+      
+      padding: 10px; /* Réduisez l'espacement intérieur */
+
+  }
 }

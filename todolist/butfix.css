@@ -1,0 +1,19 @@
+#button-right {
+    position: fixed;
+    background-image: url(images/share.jpg);
+    background-size: cover;
+    top: 135mm; /* Vous pouvez ajuster cette valeur pour le positionner verticalement */
+    right: 20px; /* Ajustez cette valeur pour positionner le bouton à droite */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    border: none; /* Supprimez les bordures du bouton si nécessaire */
+    border-radius: 35px; /* Ajoutez des coins arrondis au bouton */
+    cursor: pointer; /* Changez le curseur au survol du bouton */
+    width: 5%;
+    height: 10%;
+}
+#button-right:hover {
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    z-index: 2;
+}
+
