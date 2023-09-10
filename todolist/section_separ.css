@@ -1,4 +1,4 @@
-.separateur{
+.separateur {
     border: 1px solid rgb(96, 104, 112);
     width: 2cm;
     height: 20cm;
@@ -9,65 +9,64 @@
     display: flex;
 
 }
-#planing{
-    background-image: url(images/planing.png);
+#home{
+    background-image: url(images/home-solid-240.png);
     background-size: cover;
     background-position: center;
-    border: 1px solid rgb(143, 143, 158);
+    border: 1px solid white;
     border-radius: 30px;
     width: 18mm;
     height: 18mm;
-    background-color: rgb(226, 65, 65);
+    background-color: white;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease; /* Ajoute des transitions pour le mouvement et la couleur de fond */
-    position: relative; /* Ajoutez une position relative pour pouvoir placer le fond coloré */
-    z-index: 1;
+    display: flex;
+    
     }
 
-#notes{
-    background-image: url(images/score.png);
+#planing{
+    background-image: url(images/clipboard-regular-240.png);
     background-size: cover;
-    border: 1px solid rgb(143, 143, 158);
+    border: 1px solid white;
     border-radius: 30px;
     width: 18mm;
     height: 18mm;
-    background-color: rgb(226, 65, 65);
+    background-color: white;
     margin-bottom: 20px;
     cursor: pointer;
 
 }
 
 #projects{
-    background-image: url(images/project.png);
+    background-image: url(images/cog-solid-240.png);
     background-size: cover;
-    border: 1px solid rgb(143, 143, 158);
+    border: 1px solid white;
     border-radius: 30px;
     width: 18mm;
     height: 18mm;
-    background-color: rgb(226, 65, 65);
+    background-color: white;
     margin-bottom: 20px;
     cursor: pointer;
 }
 #raport{
-    background-image: url(images/rapport.png);
+    background-image: url(images/file-blank-solid-240.png);
     background-size: cover;
-    border: 1px solid rgb(143, 143, 158);
+    border: 1px solid white;
     border-radius: 30px;
     width: 18mm;
     height: 18mm;
-    background-color: rgb(226, 65, 65);
+    background-color: white;
     margin-bottom: 20px;
     cursor: pointer;
 }
 #activites{
-    background-image: url(images/jeux.png);
+    background-image: url(images/football-regular-240.png);
     background-size: cover;
-    border: 1px solid rgb(143, 143, 158);
+    border: 1px solid white;
     border-radius: 30px;
     width: 18mm;
     height: 18mm;
-    background-color: rgb(226, 65, 65);
+    background-color: white;
     margin-bottom: 20px;
     cursor: pointer;
     
@@ -106,33 +105,33 @@
     z-index: 2;
     border: 2px solid rgb(27, 217, 113);
 }
+#home:hover{
+    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
+    background-color: beige; /* Changez la couleur de fond en orange au survol */
+    border: 2px solid rgb(29, 213, 112);
+    z-index: 2;
+} 
 #planing:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
-    z-index: 2;
-    border: 2px solid rgb(29, 201, 106);
-} 
-#notes:hover{
-    transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    background-color: beige; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
     border: 2px solid rgb(29, 215, 113);
 } 
 #projects:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    background-color: beige; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
     border: 2px solid rgb(29, 213, 112);
 } 
 #activites:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    background-color: beige; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
     border: 2px solid rgb(28, 207, 109);
 } 
 #raport:hover{
     transform: translateY(3px); /* Déplace le bouton vers le bas de 3 pixels au survol */
-    background-color: orange; /* Changez la couleur de fond en orange au survol */
+    background-color: beige /* Changez la couleur de fond en orange au survol */
     z-index: 2;
     border: 2px solid rgb(25, 209, 108);
 } 
@@ -152,4 +151,20 @@
     background-color: orange; /* Changez la couleur de fond en orange au survol */
     z-index: 2;
     border: 2px solid rgb(22, 196, 100);
+}
+
+button:hover::before {
+    content: attr(value); /* Afficher le nom du bouton */
+    position: absolute;
+    top: -30px; /* Ajuster la position verticale au-dessus du bouton */
+    left: 50%;
+    transform: translateX(-50%); /* Centrer horizontalement */
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1; /* Assurer que le texte est au-dessus du bouton */
+    opacity: 0; /* Le rendre invisible initialement */
+    transition: opacity 0.3s ease-in-out;
 }

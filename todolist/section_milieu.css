@@ -1,0 +1,10 @@
+main {
+    margin: 20px auto; /* Crée une marge autour du contenu central */
+    padding: 20px; /* Ajoute de l'espace interne au contenu central */
+    background-color: #f0f0f0; /* Ajoute un arrière-plan au contenu central */
+    border: 1px solid #c71616; /* Ajoute une bordure au contenu central */
+    width: 6cm;
+    left: 4cm;
+    top: 4cm;
+
+}
