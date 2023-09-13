@@ -1,0 +1,70 @@
+section{
+    height: 20cm;
+    width: 100%;
+    background-color:whitesmoke;
+}
+
+.menu{
+    display: flex;
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    height: auto;
+    width: 9%;
+    background-color:white ;
+    box-sizing: border-box;
+}
+
+.inside{
+    margin-left: 5px;
+    display: flex;
+    background-color: white;
+    float: left;
+    height: auto;
+    width: 89%;
+    box-sizing: border-box;
+    font-size: 29px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+
+}
+.menu{
+    display: flex;
+
+}
+.menu a{
+    display: flex;
+    width: 2cm;
+    height: 2cm;
+    font-size: 70px;
+    margin-left: 10px;
+    color: rgba(14, 14, 13, 0.58);
+    border: none;
+    text-decoration: none;
+
+ 
+}
+.menu i:hover{
+   transform: scale(1.1);
+    color: #EE1C47;
+
+}
+
+canvas{
+    border: 1px solid rgb(108, 96, 96);
+    border-radius: 15px;
+}
+
+#effacerCanvas{
+    border: 1px solid  rgb(108, 96, 96);
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgb(63, 171, 63);
+}
+

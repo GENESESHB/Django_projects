@@ -3,11 +3,20 @@ header {
     border-bottom: 1px solid #ccc;
     height: 70px;
     width: 100%;
+    background-color: #f5efef;
+    margin: 0;
+    padding: 0;
   }
   .logo img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 1%;
     width: 15%;
-    height: 25mm;
-    bottom: 2px;
+    height: 10%;
+    max-height: 2cm;
+    max-width: 2cm;
+
   }
   
 
@@ -38,13 +47,14 @@ header {
 }
 
 #search-button {
-  width: 3cm;
+  display: flex;
   background-color: rgb(214, 27, 27);
   height: 9mm;
   color: #fff; /* Texte en blanc */
   border: 1px solid blanchedalmond; /* Pas de bordure autour du bouton */
   border-radius: 25px;
   padding: 12px 20px; /* Rembourrage à l'intérieur du bouton */
+  width: 2cm;
   cursor: pointer; /* Curseur de main au survol du bouton */
 }
 #search-button:hover{
