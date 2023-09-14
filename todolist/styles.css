@@ -84,6 +84,44 @@ h2{
     font-size: 55px;
     color: black;
 }
+.upd{
+    background-color: bisque;
+    border-radius: 15px;
+    font-size: 17px;
+    padding-top: 1cm;
+}
+
+/* styles.css */
+
+/* Style du formulaire */
+form {
+    margin: 20px; /* Marge autour du formulaire */
+    padding: 20px; /* Espacement interne du formulaire */
+    border: 1px solid #e61c1c; /* Bordure autour du formulaire */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+/* Style du champ de téléchargement de fichier */
+input[type="file"] {
+    margin-right: 10px; /* Marge à droite du champ de fichier */
+}
+
+/* Style du bouton d'envoi */
+button[type="submit"] {
+    background-color: #3498db; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement interne du bouton (haut/bas, gauche/droite) */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur de type main (comme un lien) au survol */
+}
+
+/* Style au survol du bouton */
+button[type="submit"]:hover {
+    background-color: #2980b9; /* Nouvelle couleur de fond au survol */
+}
+
 
 .annonce {
     width: 300px;
